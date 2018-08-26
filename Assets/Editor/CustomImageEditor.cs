@@ -18,7 +18,7 @@ public class CostomImageEditor : ImageEditor
     {
         serializedObject.Update();
 
-        _blendType.intValue = (int)(CustomImage.TYPE)EditorGUILayout.EnumPopup("Type", (CustomImage.TYPE)_blendType.intValue);
+        _blendType.intValue = (int)(CustomImage.BlendType)EditorGUILayout.EnumPopup("Blend Type", (CustomImage.BlendType)_blendType.intValue);
 
         serializedObject.ApplyModifiedProperties();
 

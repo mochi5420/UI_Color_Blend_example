@@ -4,13 +4,13 @@ using UnityEngine.UI;
 
 public class CustomImage : Image
 {
-    public enum TYPE
+    public enum BlendType
     {
         ADDITIVE = 0,
         MULTIPLY = 1,
     }
 
-    [SerializeField] private TYPE _blendType = TYPE.MULTIPLY;
+    [SerializeField] private BlendType _blendType = BlendType.MULTIPLY;
 
     public override Color color
     {
