@@ -241,7 +241,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-  _colorType: 0
+  _blendType: 0
 --- !u!222 &248774649
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -450,7 +450,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-  _colorType: 1
+  _blendType: 1
 --- !u!222 &821960839
 CanvasRenderer:
   m_ObjectHideFlags: 0

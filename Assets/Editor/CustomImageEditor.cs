@@ -6,11 +6,11 @@ using UnityEditor.UI;
 public class CostomImageEditor : ImageEditor
 {
 
-    SerializedProperty _colorType;
+    SerializedProperty _blendType;
 
     protected override void OnEnable()
     {
-        _colorType = serializedObject.FindProperty("_colorType");
+        _blendType = serializedObject.FindProperty("_blendType");
         base.OnEnable();
     }
 
@@ -18,7 +18,7 @@ public class CostomImageEditor : ImageEditor
     {
         serializedObject.Update();
 
-        _colorType.intValue = (int)(CustomImage.TYPE)EditorGUILayout.EnumPopup("Type", (CustomImage.TYPE)_colorType.intValue);
+        _blendType.intValue = (int)(CustomImage.TYPE)EditorGUILayout.EnumPopup("Type", (CustomImage.TYPE)_blendType.intValue);
 
         serializedObject.ApplyModifiedProperties();
 
